@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMART DEVICE</title>
+
+    <meta name="theme-color" content="#3372DF">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <script src="js/cavan.js"></script>
+    <div class="container">
+
+
+      <div class="navbar-spacer"></div>
+
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+            <li class="navbar-item"><img style="height: 70px; padding-right: 20px;" src="img/bktphcm.png"></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html">Homepage</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="404.html">WiFi</a>
+            </li>
+            
+            <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+            <li class="navbar-item">
+              <!-- <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a> -->
+			  <a class="navbar-link" href="https://hiq.ai/vi/category/nha-thong-minh">Reference</a>
+            </li>
+			
+			<!-- <li class="navbar-item"> -->
+              <!-- <a class="navbar-link" href="login.html">Login</a> -->
+            <!-- </li>  -->
+			<!-- <li class="navbar-item"> -->
+              <!-- <a class="navbar-link" href="https://www.thuthuatweb.net/demo/css/login-form-css.html?username=&password=#">Login</a> -->
+            <!-- </li> -->
+          </ul>
+        </div>
+		
+		<br />
+		<button style="margin-left:100px"><a href="livingroom.html">Phòng khách</a></button> 
+		<br/>
+		<button style="margin-left:100px"><a href="kitchen.html">Nhà Bếp</a></button> 
+		</nav>
+		 <section class="header">
+        <h2 class="docs-headers">PHÒNG NGỦ</h2>
+		<br />
+		<img style="height: 400px; width:650px; padding-right: 25px;" src="img/phongngu.jpg">
+		
+		<div class="row">
+		
+					<div class="offset-by-two four columns value-prop" align="center">
+						<h6 class="docs-header">LED</h6>
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="led-switch2" onclick="led2()">
+							<label class="onoffswitch-label" for="led-switch2">
+								<span class="onoffswitch-inner"></span>
+								<span class="onoffswitch-switch"></span>
+							</label>
+						</div>
+						<br /><br />
+						<button id="timersss1" onclick="seton2()">TimeOn</button>
+						<button id="timersss2" onclick="setoff2()">TimeOff</button>
+						<br/> <br/>
+						<div class="four columns value-prop" align="center" style="margin-left:500px">
+						<h6 class="docs-header" >SetAuto Light</h6> 
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="setauto-switch2" onclick="setauto2()">
+							<label class="onoffswitch-label" for="setauto-switch2"> 
+								<span class="onoffswitch-inner"></span> 
+								<span class="onoffswitch-switch"></span> 
+							</label> 
+						</div> 
+						
+						</div>		
+				
+						
+						<div class="four columns value-prop" align="center" style="margin-left:120px">
+						<h6 class="docs-header" >Quạt</h6> 
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="relay-switch2" onclick="relay2()">
+							<label class="onoffswitch-label" for="relay-switch2"> 
+								<span class="onoffswitch-inner"></span> 
+								<span class="onoffswitch-switch"></span> 
+							</label> 
+						</div> 
+						<img style="height: 200px;padding-left:0px;" src="img/quat.jpg">
+					</div>		
+
+						<div class="four columns value-prop" align="center" style="margin-left:180px">
+						<h6 class="docs-header" >SetAuto Pan</h6> 
+						<div class="onoffswitch">
+							<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="setauto-switch3" onclick="setauto3()">
+							<label class="onoffswitch-label" for="setauto-switch3"> 
+								<span class="onoffswitch-inner"></span> 
+								<span class="onoffswitch-switch"></span> 
+							</label> 
+						</div> 
+						
+						</div>
+						
+					</div>
+		<br/><br/>
+		<img style="height: 150px; padding-right: 25px;" src="img/bden.jpg">										
+			<br/><br/>
+       </div>
+		<br/> <br/> <br/>
+<div class="row">
+					  
+          <div class="six columns value-prop">
+            <div id="temp-chart" style="height: 300px; width: 100%;"></div>
+            <h5><strong>Nhiệt Độ:</strong></h5><p class="button" id="temp"></p>
+          </div>
+		  
+          <div class="six columns value-prop">
+            <div id="humid-chart" style="height: 300px; width: 100%;"></div>
+            <h5><strong>Độ ẩm:</strong></h5><p class="button" id="humid"></p>
+          </div>
+		  
+		   <div class="six columns value-prop">
+            <div id="lumen-chart2" style="height: 300px; width: 200%;"></div>
+            <h5><strong>Cường độ sáng:</strong></h5><p class="button" id="lumen2"></p>
+          </div>
+		   
+        </div>
+		</section>
+		<div class="docs-section" id="intro">
+        <h6 class="docs-header" id="status_box"><a href="http://www.smarthome.com.vn/nha-thong-minh">©2019 - Nguyễn Minh Trí</a></h6>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/app1.js"></script>
+  </body>
+</html>
